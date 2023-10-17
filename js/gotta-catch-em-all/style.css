@@ -1,0 +1,118 @@
+/* added */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --logo: #ea9010;
+  --hover-shadow: #e54b4b;
+  --shadow: #706c61;
+  --background: #ebebd3;
+  --background-soft: #f2f2e3;
+  --main: #000500;
+}
+/* dedda */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* added */
+  color: var(--main);
+  font-family: "Ubuntu", sans-serif;
+  /* dedda */
+}
+
+h1 {
+  margin-bottom: 16px;
+
+  /* added */
+  text-align: center;
+  margin-top: 16px;
+  font-size: 9vw;
+  color: var(--logo);
+  -webkit-text-stroke: 0.16rem black;
+  /* text-shadow: 1px 1px 0 var(--main), -1px -1px 0 var(--main), -1px 1px 0 var(--main), 1px -1px 0 var(--main); */
+  /* dedda */
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+label {
+  padding: 8px;
+}
+
+label span {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+input {
+  padding: 4px;
+}
+
+button {
+  padding: 4px;
+}
+
+/* added */
+body {
+  background-color: var(--background);
+}
+
+.pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.pokemon {
+  background-color: var(--background-soft);
+  width: 12rem;
+  margin: 1.5rem 2rem;
+  padding: 2rem;
+  border-radius: 28px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 1em var(--shadow);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.pokemon img {
+  width: 100%;
+  height: 100%;
+}
+.pokemon:hover {
+  transform: scale(1.33);
+  box-shadow: 0 0 2em var(--hover-shadow);
+}
+
+form {
+  background-color: var(--background-soft);
+  padding: 2rem;
+  margin: 2rem 5rem;
+  border-radius: 28px;
+  box-shadow: 0 0 3em var(--background-soft);
+  overflow: auto;
+}
+form label {
+  white-space: nowrap;
+}
+form div {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+form div input {
+  width: 80%;
+  min-width: 120px;
+  margin-right: 1rem;
+}
+/* dedda */
