@@ -14,19 +14,20 @@
     Powodzenia!
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 
 :root {
   --card-background: #ffffffa2;
+  --card-background-phone: #47597a;
   --card-main: #3c5378;
   --card-shadow: #1b1c216E;
+  --card-error:#a03021;
 }
-/* card has opacity 90%? 
-  input cien wewnatrz
-*/
+
 html {
   color: var(--card-main);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -36,32 +37,55 @@ body {
   width: 100%;
   background: 
 radial-gradient(circle at 90.21% 61.11%, #514c35, transparent 31%),radial-gradient(circle at 39.33% 95.05%, #627ea8, transparent 40%),radial-gradient(circle at 8.45% 60.09%, #7b97a8, transparent 30%),radial-gradient(circle at 87.56% 98.67%, #0f0f0f, transparent 59%),radial-gradient(circle at 0% 0%, #253d6b, transparent 100%),radial-gradient(circle at 100% 0%, #253d6b, transparent 90%),radial-gradient(circle at 2.36% 98.79%, #28282a, transparent 63%),radial-gradient(circle at 50% 0%, #253d6b, transparent 100%);
-  margin: 0;
+  background-attachment: fixed;
+margin: 0;
 }
 section {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  height: 76%;
+  height: min-content;
   width: 36%;
   min-width: 360px;
+  max-width: 500px;
   border-radius: 36px;
+  padding: 28px 0 56px 0;
   box-shadow: 2px 2px 16px var(--card-shadow);
   backdrop-filter: blur(1000px);
   background-color: var(--card-background);
   display:flex;
   flex-direction: column;
 }
+@media screen and (max-width: 400px) {
+  body{
+    background: none;
+    background-color: var(--card-background-phone);
+  }
+  section{
+    filter: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  section form{
+    padding: 0 5% 0 5%;
+  }
+  section img{
+    width: 40%;
+  }
+}
 section img {
-  height: 20%;
+  align-self: center;
+  width: 20%;
   object-fit: contain;
-  margin-top: 20px;
+  margin: 0;
 }
 section h1{
   margin: 0;
   margin-bottom: 32px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 section form{
@@ -83,6 +107,9 @@ input[type=text],input[type=email]{
   color: var(--card-main);
   margin: 8px 32px;
 }
+input[type=text],input[type=email]:focus{
+  outline: none;
+}
 input[type=submit]{
   margin-top: 32px;
   box-shadow:2px 2px 4px var(--card-shadow);
@@ -102,4 +129,11 @@ form span{
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 12px 36px;
+}
+#checkbox-container input[type=checkbox]:checked{
+  accent-color: var(--card-background);
+  box-shadow: 0 0 4px var(--card-shadow);
+}
+.error{
+  box-shadow: inset 2px 2px 4px var(--card-error) !important;
 }
