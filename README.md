@@ -4,7 +4,7 @@ Są to moje przykładowe rozwiązania problemów dostępnych w [repozytorium rek
 
 
 ## 🛠 Skills
-Javascript, Node.js, Angular, PHP, SQL, HTML, CSS, C, C++, C#, Windows Forms .NET, WPF, Xamarin, Python, Delphi itd. 
+Javascript❤️, Node.js❤️, Angular, PHP, SQL❤️, HTML, CSS, C, C++❤️, C#, Windows Forms .NET, WPF, Xamarin, Python, Delphi itd. 
 
 ## Feedback
 
