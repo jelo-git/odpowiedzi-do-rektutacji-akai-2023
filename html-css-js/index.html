@@ -1,0 +1,56 @@
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AKAI Frontend Task - HTML
+
+	W tym pliku znajduje się struktura strony z formularzem. Twoim zadaniem jest upiększenie
+	tego formularza. Przeanalizuj poniższy kod. Jego znajomość będzie potrzebna do przerobienia
+	pliku form.css odpowiedzialnego za styl strony. Gdy zapoznasz się ze strukturą strony,
+	przejdź do pliku css/form.css lub js/validation.js po dalsze instrukcje.
+
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	<meta name="viewport" charset="utf-8"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+	<section id="task-frontend">
+		<img src="img/logo.png">
+		<h1 class="basic-title">Formularz rekrutacyjny</h1>
+		<form method="POST">
+
+			<input type="text" id="first-name" placeholder="Imię" />
+			<input type="text" id="last-name" placeholder="Nazwisko" />
+			<input type="email" id="email" placeholder="e-mail" />
+
+			<span>Sekcje, które cię interesują:</span>
+			<div id="checkbox-container">
+				<label for="frontend-checkbox"><input type="checkbox" id="frontend-checkbox" name="section"
+						value="frontend">
+					frontend</label>
+				<label for="backend-checkbox"><input type="checkbox" id="backend-checkbox" name="section"
+						value="backend">
+					backend</label>
+				<label for="mobile-checkbox"><input type="checkbox" id="mobile-checkbox" name="section" value="mobile">
+					mobile</label>
+				<label for="graphics-checkbox"><input type="checkbox" id="graphics-checkbox" name="section"
+						value="grafika">
+					grafika</label>
+			</div>
+
+			<input type="submit" value="Wyślij">
+		</form>
+	</section>
+	<script type="text/javascript" src="js/validation.js"></script>
+
+</body>
+
+</html>

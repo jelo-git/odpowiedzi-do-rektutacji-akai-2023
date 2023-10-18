@@ -1,0 +1,105 @@
+/*
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AKAI Frontend Task - CSS
+
+    Spróbuj zmodyfikować poniższy plik ze stylami tak, by upiększyć formularz na stronie.
+    Jako inspiracji możesz skorzystać z szablonu znajdującego się w pliku img/layout.png
+    Nie wymagamy, by wykonać identyczny layout. Liczy się kreatywność.
+
+    Przy wykonywaniu zadania można zmienić strukturę pliku index.html.
+    Pamiętaj, że w takim wypadku będzie trzeba zadbać o dostosowanie odpowiednich selektorów.
+
+    Jeśli korzystasz z preprocessorów takich jak Sass/Less, również możesz się tym pochwalić.
+
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+:root {
+  --card-background: #ffffffa2;
+  --card-main: #3c5378;
+  --card-shadow: #1b1c216E;
+}
+/* card has opacity 90%? 
+  input cien wewnatrz
+*/
+html {
+  color: var(--card-main);
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: 
+radial-gradient(circle at 90.21% 61.11%, #514c35, transparent 31%),radial-gradient(circle at 39.33% 95.05%, #627ea8, transparent 40%),radial-gradient(circle at 8.45% 60.09%, #7b97a8, transparent 30%),radial-gradient(circle at 87.56% 98.67%, #0f0f0f, transparent 59%),radial-gradient(circle at 0% 0%, #253d6b, transparent 100%),radial-gradient(circle at 100% 0%, #253d6b, transparent 90%),radial-gradient(circle at 2.36% 98.79%, #28282a, transparent 63%),radial-gradient(circle at 50% 0%, #253d6b, transparent 100%);
+  margin: 0;
+}
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 76%;
+  width: 36%;
+  min-width: 360px;
+  border-radius: 36px;
+  box-shadow: 2px 2px 16px var(--card-shadow);
+  backdrop-filter: blur(1000px);
+  background-color: var(--card-background);
+  display:flex;
+  flex-direction: column;
+}
+section img {
+  height: 20%;
+  object-fit: contain;
+  margin-top: 20px;
+}
+section h1{
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+section form{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10% 0 10%;
+}
+section form input{
+  opacity: 80%;
+  border: none;
+  border-radius: 38px;
+  font-size: 18px;
+}
+input[type=text],input[type=email]{
+  flex: 1;
+  padding: 10px 36px;
+  box-shadow:inset 2px 2px 4px var(--card-shadow);
+  background-color: var(--card-background);
+  color: var(--card-main);
+  margin: 8px 32px;
+}
+input[type=submit]{
+  margin-top: 32px;
+  box-shadow:2px 2px 4px var(--card-shadow);
+  padding: 12px 56px;
+  width: fit-content;
+  background-color: var(--card-main);
+  align-self: center;
+  color: white;
+}
+form span{
+  align-self: center;
+  margin: 24px;
+}
+#checkbox-container{
+  display: grid;
+  align-self: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 12px 36px;
+}
