@@ -16,8 +16,9 @@ Są to moje przykładowe rozwiązania problemów dostępnych w [repozytorium rek
 ## Feedback
 
 Jeśli masz jakiś feedback, proszę skontaktuj się pod 
-📮 batogfilip@gmail.com
-👨‍🎓 filip.batog@student.put.poznan.pl
-😎 [Discord](https://discordapp.com/users/314829334965780480).
 
-  
+📮 batogfilip@gmail.com
+
+👨‍🎓 filip.batog@student.put.poznan.pl
+
+😎 [Discord](https://discordapp.com/users/314829334965780480)
