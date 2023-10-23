@@ -15,6 +15,9 @@ Są to moje przykładowe rozwiązania problemów dostępnych w [repozytorium rek
 😁Windows Forms .NET, WPF, Xamarin
 ## Feedback
 
-Jeśli masz jakiś feedback, proszę skontaktuj się pod 📮 batogfilip@gmail.com bądź [Discord](https://discordapp.com/users/314829334965780480).
+Jeśli masz jakiś feedback, proszę skontaktuj się pod 
+📮 batogfilip@gmail.com
+👨‍🎓 filip.batog@student.put.poznan.pl
+😎 [Discord](https://discordapp.com/users/314829334965780480).
 
   
