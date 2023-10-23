@@ -1,6 +1,6 @@
 # Odpowiedzi do rekrutacji AKAI 2023
 
-Są to moje przykładowe rozwiązania problemów dostępnych w [repozytorium rekrutacji](https://github.com/akai-org/rekrutacja).
+Są to moje przykładowe rozwiązania problemów dostępnych z [repozytorium rekrutacji](https://github.com/akai-org/rekrutacja).
 
 
 ## 🛠 Skills
